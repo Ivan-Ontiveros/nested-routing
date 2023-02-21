@@ -1,0 +1,33 @@
+.hl {
+  border: solid 2px red;
+}
+
+.app {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr;
+  header {
+    display: grid;
+    background-color: black;
+    color: white;
+    padding: 20px 100px;
+    nav a {
+      margin: 0 15px 0 0;
+      color: white;
+      &:hover {
+        color: cyan;
+      }
+    }
+  }
+  & main {
+    display: grid;
+    padding: 50px 100px;
+  }
+}
+
+
+.container {
+  nav a {
+    margin: 0 15px 0 0;
+  }
+}
