@@ -9,11 +9,14 @@ export const Container: React.FunctionComponent<ContainerProps> = (props) => {
     <div className="container">
       <div>
         <h1>Dave's Rewards Center</h1>
-        <p>Your hub to earn, track and redeem rewards as you complete healthy activities.</p>
+        <p>
+          Your hub to earn, track and redeem rewards as you complete healthy
+          activities.
+        </p>
       </div>
       <nav>
-        <Link to="/v6">Rewards</Link>
-        <Link to="/v6/history">History</Link>
+        <Link to="/healthprograms/rewards">Rewards</Link>
+        <Link to="/healthprograms/rewards/history">History</Link>
       </nav>
       <Routes>
         <Route path="history" element={<History />} />

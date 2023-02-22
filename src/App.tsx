@@ -8,13 +8,13 @@ export const App = () => (
     <header>
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/v6">Rewards</Link>
+        <Link to="/healthprograms/rewards">Rewards</Link>
       </nav>
     </header>
     <main>
       <Routes>
         {/* NOTE: Use an asterisk (*) on the 'container' route in order to render child routes properly. */}
-        <Route path="v6/*" element={<Container />} />
+        <Route path="healthprograms/rewards/*" element={<Container />} />
         <Route path="/" element={<HomePage />} />
       </Routes>
     </main>
